@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f1f1f1;
+  }
+  
+  div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  p {
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  @media (max-width: 600px) {
+    div {
+      padding: 10px;
+    }
+  }
+  

@@ -1,0 +1,24 @@
+<div class="container1">
+    <input type="search" placeholder="Search" [(ngModel)]="searchtext">
+    <div class="background">
+        <table class="tcss" *ngIf="appointments">
+            <thead>
+                <tr>
+                    <th>DoctorName</th>
+                    <th>Specialist</th>
+                    <th>Book Appointment</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let app of tableData|search:searchtext">
+                    <td>{{app.name}}</td>
+                    <td>{{app.specialist}}</td>
+                    <td><button routerLink="/patientpage/pappointment" RouterLinkActive="active">Book Appointment</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="footer">
+    <span>Thanks for visiting our website</span>
+</div>

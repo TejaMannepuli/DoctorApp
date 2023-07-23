@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="homepage">
+        <div class="container1">
+            <span>Book your<i> DoctorAppointment</i></span>
+        </div>
+        <div class="layout">
+            <div class="cancel-button">
+                <button class="close"  routerLink="/homepage" RouterLinkActive="active" >&times;</button>
+            </div>
+            <h1>{{formtitle}}</h1>
+            <form [formGroup]="formdata" (ngSubmit)="action(formdata.value)">
+                <div class="form-group">
+                    <label >User Type:</label>
+                    <select  name="aduser" formControlName="aduser" required>
+                        <option value="">Select</option>
+                        <option value="Admin">Admin</option>
+                        <option value="User">User</option>
+                      </select>
+                </div>
+                <div class="form-group">
+                    <label for="uname"> UserName:</label>
+                    <input type="text" name="name"  formControlName="name" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password"  formControlName="password" autocomplete="off" required>
+    
+                </div>
+                <div class="form-button">
+            <button type="submit">Login</button>
+            <input type="reset" name="reset" value="Reset" >
+            
+            </div>
+            
+            </form>
+            
+        </div>
+        <div class="footer">
+            <span></span>
+        </div>
+    </div>
+</body>
+</html>

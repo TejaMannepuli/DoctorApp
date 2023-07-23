@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="app">
+            <form [formGroup]="formData" (ngSubmit)="logaction(formData.value)">
+                <h1>Book Appointment</h1>
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" name="name" id="name" formControlName="name" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" name="email" id="email" formControlName="email" autocomplete="off" required>
+    
+                </div>
+                <div class="form-group">
+                    <label>Phone:</label>
+                    <input type="text" name="phone" id="phone" formControlName="phone" autocomplete="off" required>
+    
+                </div>
+                <div class="form-group">
+                    <label>Date:</label>
+                    <input type="date" name="date" id="date" formControlName="date" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label>Doctor Specialty:</label>
+                    <select id="doctor" name="doctor" formControlName="doctor">
+                        <option value=""></option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Dermatology">Dermatology</option>
+                        <option value="Orthopedics">Orthopedics</option>
+                        <option value="Pediatrics">Pediatrics</option>
+                        <option value="Neurologist">Neurologist</option>
+                        <option value="Radiologist">Radiologist</option>
+                        <option value="Gastroenterologist">Gastroenterologist</option>
+                    </select>
+                </div>
+                <button type="submit" value="Book Appointment">Book Appointment</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container1" *ngIf="appointment">
+        <div class="search">
+        <input type="search" [(ngModel)]="searchtext" placeholder="Search">
+        </div>
+        <div class="data">
+            <table>
+                <thead>
+                    <tr><th>Name</th>
+                        <th>Email</th>
+                        <th>phone</th>
+                        <th>Date</th>
+                        <th>Doctor</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let app of tableData |search:searchtext">
+                        <td>{{app.name}}</td>
+                        <td>{{app.email}}</td>
+                        <td>{{app.phone}}</td>
+                        <td>{{app.date|date:'shortDate'}}</td>
+                        <td>{{app.doctor}}</td>
+                        <td><button class="btn1" (click)="display(app)">Reschedule</button></td>
+                        <td><button class="btn2" (click)="delete(app.id)">Delete</button></td>
+                        <u></u>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="form-wrapper" *ngIf="showform">
+        <div class="doctorform">
+            <h1 class="text-center text-info">{{formheading}}</h1>
+            <form  [formGroup]="formdata"  (ngSubmit)="update(formdata.value)" >
+                <div class="group">
+                    <label>Name:</label>
+                    <input type="text" name="name"  [(ngModel)]="formdata.name" autocomplete="off" required>
+                </div>
+                <div class="group">
+                    <label>Email:</label>
+                    <input type="text" name="email" [(ngModel)]="formdata.email" autocomplete="off" required>
+                </div>
+                <div class="group">
+                    <label>Phone:</label>
+                    <input type="text" name="phone"  [(ngModel)]="formdata.phone" autocomplete="off" required>
+                </div>
+                <div class="group">
+                    <label>Date:</label>
+                    <input type="date" name="date"  [(ngModel)]="formdata.date" autocomplete="off" required>
+                </div>
+                <div class="group">
+                    <label >Doctor:</label>
+                    <select name="doctor" [(ngModel)]="formdata.doctor" >
+                        <option value=""></option>
+                        <option value="Cardiology">Cardiology</option>
+                        <option value="Dermatology">Dermatology</option>
+                        <option value="Orthopedics">Orthopedics</option>
+                        <option value="Pediatrics">Pediatrics</option>
+                        <option value="Neurologist">Neurologist</option>
+                        <option value="Radiologist">Radiologist</option>
+                        <option value="Gastroenterologist">Gastroenterologist</option>
+                    </select>
+                </div>
+                <div class="action">
+                    <button class="save" type="submit" (click)="savedata()">Save</button>
+                    <button class="close" (click)="closeform()">Close</button>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="homepage">
+        <div class="container1">
+            <span>Book your<i> DoctorAppointment</i></span>
+            </div>
+        <div class="layout">
+            <div class="cancel-button">
+                <button class="close" (click)="showBook()" routerLink="/homepage" RouterLinkActive="active" >&times;</button>
+            </div>
+            <h1>{{formtitle}}</h1>
+            <form [formGroup]="formData" (ngSubmit)="action(formData.value)">
+                <div class="form-group">
+                    <label for="fname">Full Name:</label>
+                    <input type="text" name="fname" id="fname" formControlName="fname"  autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Enter E-mail:</label>
+                    <input type="text" name="email" formControlName="email" pattern="[0-9][A-Z][a-z]@gmail.com"  id="email" formControlName="email" autocomplete="off" required>
+                  </div>
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" formControlName="gender" required>
+                        <option value="">Select</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                      </select>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date Of Birth:</label>
+                    <input type="date" name="date" id="date"  formControlName="date" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Contact number:</label>
+                    <input type="phone" size="10" name="phone" id="phone"  formControlName="phone" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="uname">Create UserName:</label>
+                    <input type="text" name="uname" id="uname" formControlName="uname" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Create Password:</label>
+                    <input type="password" name="password" id="password" formControlName="password" autocomplete="off" required>
+    
+                </div>
+                <div class="form-group">
+                    <label>Confirm Password:</label>
+                    <input type="password" name="cpassword" formControlName="cpassword" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <textarea name="address" id="address" formControlName="address" ></textarea>
+                </div>
+                <div class="form-button">
+            <button type="submit">Submit</button>
+            <button class="login" routerLink="/login">Login</button> 
+            <input type="reset" name="reset" value="Reset" >
+            
+            </div>
+            
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <span></span>
+    </div>
+    
+</body>
+</html>

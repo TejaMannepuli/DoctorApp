@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<div class="background">
+		<div class="dashboard">
+			<div class="widget">
+			  <p>Total Doctors</p>
+			  <h1></h1>
+			  <div class="view" routerLink="/mainpage/profiles">View</div>
+			</div>
+			
+			<div class="widget">
+			  <p>Total Patients</p>
+			  <h1></h1>
+			  <div class="view" routerLink="/mainpage/appointments">View</div>
+			</div>
+		</div>
+		<button class="ad" (click)="display()">Add Admin</button>
+		<div class="aform" *ngIf="show">
+			<div class="cancel-button">
+				<button class="close" (click)="closeform()">&times;</button>
+			</div>
+			<form [formGroup]="formdata" (ngSubmit)="admin(formdata.value)">
+				<h1>Add New Admin</h1>
+				<div class="form-wrapper">
+					<div class="form-group">
+						<label >AdminName:</label>
+						<input type="text" name="name" formControlName="name" autocomplete="off" required>
+					</div>
+					<div class="form-group">
+						<label >CreatePassword:</label>
+						<input type="password" name="password" formControlName="password" autocomplete="off" required>
+					</div>
+					<div class="action">
+						<button  class="save" type="submit">Submit</button>
+						<button class="close1"  type="reset">Cancel</button>
+					</div>
+					
+				</div>
+			</form>
+		</div> 
+	</div>
+	
+</body>
+</html>

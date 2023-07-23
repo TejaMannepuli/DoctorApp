@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="homepage">
+        <h1>Welcome To <i> DoctorAppointment</i></h1>
+        <div class="access">
+            <li routerLink="/register" RouterLinkActive="active">Registration</li>
+            <li routerLink="/login" RouterLinkActive="active">Login</li>
+            <li (click)="show()">About us</li>
+            <li (click)="show1()">Contact information</li>
+        </div>
+        <div *ngIf="display">
+            <p>Booking a doctor appointment at the nearest hospital allows you to seek medical attention efficiently.
+                By booking an appointment, you can secure a specific date and time slot to consult with a doctor.
+                This process helps in minimizing waiting times and ensures that you receive prompt medical care.
+                Booking a doctor appointment enables the hospital to manage their patient flow and provide efficient healthcare services.
+                It allows you to select a doctor of your choice based on their specialization and availability.
+                Booking in advance helps you plan your visit and avoid unnecessary delays or long queues.
+                It provides an opportunity to discuss your health concerns with a qualified healthcare professional.
+                Booking an appointment facilitates effective time management for both patients and medical staff.
+                It enables hospitals to maintain a systematic and organized approach to patient care.
+                Overall, booking a doctor appointment at the nearest hospital enhances accessibility, convenience, and ensures you receive the necessary medical attention in a timely manner.
+                
+                </p>
+                <button  class="close" (click)="closeform()">Close</button>
+        </div>
+    <div *ngIf="showform">
+       
+        <header>
+            <h2>Contact Information</h2>
+        </header>
+    
+        <main>
+            <section>
+                <h2>Address</h2>
+                <p>123 Main Street,Narasaraopeta,Palnadu district,Andhra Pradesh,India</p>
+            </section>
+    
+            <section>
+                <h2>Phone</h2>
+                <p>+1 123-456-7890</p>
+            </section>
+    
+            <section>
+                <h2>Email:</h2>
+                <p>B.Techcare@gmail.com</p>
+            </section>
+            <button  class="close" (click)="closeform1()">Close</button>
+        </main>
+       
+      </div>
+    <div>
+      <ngb-carousel>
+        <ng-template *ngFor="let image of images">
+          <div class="carousel-wrapper">
+            <img src="../../assets/{{image.name}}" alt="images was not display">
+          </div>
+        </ng-template>
+      </ngb-carousel>
+    </div>
+
+       <section class="image">
+        <img src="../../assets/slide 5.jpg" alt="">
+        <img src="../../assets/Banner-Image-tab-mob.jpg" alt="">
+        <img src="../../assets/22308960-Doctor-leading-a-medical-team-at-the-hospital-Stock-Photo-doctors.jpg" alt="">
+       </section> 
+       <section class="image">
+        <img src="../../assets/Emergency-and-Urgent-Care-Centre-2.jpg" alt="">
+        <img src="../../assets/blog-banner-hospital-furniture.jpg" alt="">
+       </section>   
+    </div>
+</body>
+</html>

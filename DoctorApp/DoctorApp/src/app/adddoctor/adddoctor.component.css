@@ -1,0 +1,87 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.homepage{
+  box-sizing: border-box;
+  background-image: url("../../assets/doctor-g7622fcb7f_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 117%;
+  height: 99vh;
+}
+.form-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+.doctorform{
+  background-color: white;
+  width: 600px;
+  padding: 10px 100px;
+  margin-left: 235px;
+  margin-right: 240px;
+  border-radius: 5px;
+}
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex-direction: column;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+  color: red;
+}
+
+.formfield {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="password"],
+input[type="datetime-local"],
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+select {
+  height: 36px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+button:hover{
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  margin-left: 10px;
+  background-color: #dd0c0c;
+}

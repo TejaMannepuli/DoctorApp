@@ -1,0 +1,139 @@
+*{
+	padding: 0%;
+	margin: 0%;
+}
+.background{
+    box-sizing: border-box;
+    background-image: url("../../assets/dashboard.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+	padding-right: 175px;
+    height: 97vh;
+}
+.dashboard {
+	display: flex;
+	gap: 20px;
+	padding-right: 250px;
+	padding-left: 80px;
+	margin-left: 150px;
+	margin-bottom: 100px;
+	flex-direction: row;
+  }
+  
+  .widget {
+	background-color:rgba(0, 255, 136, 0.861);
+	padding:0px 50px 50px 50px;
+	border-radius: 5px;
+	margin-top:100px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	width: 300px;
+	height: 80px;
+	cursor: pointer;
+  }
+  .widget p{
+	padding-top: 5%;
+	justify-content: center;
+	display: flex;
+	padding-bottom: 6%;
+	font-size: 25px;
+	cursor: pointer;
+
+  }
+.view{
+	margin-top: 10%;
+	background-color: blue;
+	width: 300px;
+	height: 30px;
+	display: flex;
+	justify-content: center;
+	font-size: 20px;
+	cursor: pointer;
+	color: white;
+	margin-left: -25%;
+  }
+  .close{
+    background-color: red;
+    border:1px solid;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 40px;
+    font-weight: bold;
+    color:white;
+	
+}
+  .aform{
+	margin-left:260px;
+	background-color: white;
+	width:40%;
+	border-radius: 5px;
+  }
+  h1{
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	color: rgb(222, 10, 10);
+	font-style: italic;
+  }
+  .form-wrapper{
+
+	justify-content: center;
+	align-items: center;
+  }
+  .form-group{
+	display: flex;
+	margin: 15px 0;
+  }
+  .form-group label{
+	width: 70px;
+	line-height: 40px;
+	height: 40px;
+	margin-left: 10px;
+	font-weight: 900;
+  }
+  input{
+	width: 70%;
+	margin-left: 50px;
+	border-radius: 5px;
+  }
+  .action{
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+	margin: 20px;
+	padding-bottom: 20px;
+  }
+  .save{
+	background-color:rgb(9, 255, 0);
+	color: white;
+	border: none;
+	padding: 15px;
+	width: 70px;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  .close1{
+	background-color:red;
+	color: white;
+	border: none;
+	padding: 15px;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  .ad{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 25px;
+	background-color: rgb(24, 24, 191);
+	color: white;
+	font-style: italic;
+	font-weight: 800;
+	margin-left: 25%;
+	width: 40%;
+	height: 30px;
+  }
+  
+  
+  

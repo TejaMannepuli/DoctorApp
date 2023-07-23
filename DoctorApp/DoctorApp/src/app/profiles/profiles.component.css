@@ -1,0 +1,140 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.mob-table{
+    width: 800px;
+    padding: 20px 25px;
+    background-color: white;
+    border-radius: 3px;
+}
+.header{
+    margin-top: 0%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #435d7d;
+    color: white;
+    height: 50px;
+    width: 138%;
+    margin-left: -25px;
+    display: flex;
+}
+h2{
+    align-content: center;
+    justify-content: center;
+    margin-left: 300px;
+    font-style: italic;
+}
+.search{
+    width: 50%;
+    margin-top: 30px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-left: 100px;
+}
+.search:hover{
+    border-color: #5cb85c;
+}
+.add{
+    background-color:rgb(9, 255, 0);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 40px;
+    font-size: 15px;
+}
+.edit{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.delete{
+    background-color:red;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+table{
+    border:2px solid black;
+}
+th{
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+td{
+    text-align: center;
+    padding: 5px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+.form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 100%;
+}
+.doctorform{
+    background-color: white;
+    width: 600px;
+    padding: 20px 50px;
+    border-radius: 5px;
+}
+input{
+    width: 90%;
+}
+.group{
+    display: flex;
+    margin: 15px 0;
+}
+.group label{
+    width: 70px;
+    line-height: 40px;
+    height: 40px;
+    margin-left: 10px;
+    font-weight: 900;
+}
+.action{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 20px;
+}
+.save{
+    background-color:rgb(9, 255, 0);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.close{
+    background-color:red;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.text-info{
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    color: red;
+    font-style: italic;
+}

@@ -1,0 +1,97 @@
+*{
+    padding:0%;
+    margin: 0%;
+}
+.container{
+    padding: 0px;
+    width: 84%;
+    margin: 0px;
+    }
+    .container1{
+        background-color: aqua;
+        width:120%;
+        height: 70px;
+        display: flex;
+        margin-bottom: 0px;
+    }
+    .container1 h1{
+        float: right;
+        color: #fc0000;
+        margin-left: 60%;
+        font-size: 20px;
+
+    }
+    .container1 div p{
+        float:right;
+        align-content: center;
+        justify-content: center;
+        margin: 20px;
+        margin-right: 50px;
+        font-size: 20px;
+        font-weight: bold;
+        color:white;
+    }
+    .container1 span{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 30px;
+        font-weight:800;
+        color: rgb(106, 14, 227);
+        margin-bottom: 30px;
+    }
+    .container1 span i{
+        color: #fc0000;
+    }
+    .container1 p:hover{
+        background-color: red;
+        color: black;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .container2{
+        display: flex;
+    }
+    .navbar1{
+        background-color:limegreen ;
+        width:250px;
+        height: auto;
+        padding: 15px;
+        padding-bottom: 0px;
+    }
+    .navbar1 li{
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 5px;
+        width:fit-content;
+        margin:20px;
+        font-size: 20px;
+        font-weight: 700;
+        color: white;
+       
+    }
+    .footer{
+        background-color: aqua;
+        width: 120%;
+        height: 50px;
+        display: flex;
+    }
+    .navbar1 li:hover{
+        background-color: blue;
+        cursor: pointer;
+        color: black;
+        border-radius: 5px;
+    }
+    .footer span{
+        font-size: 40px;
+        font-weight: bold;
+        margin-left: 30%;
+        font-style: italic;
+        color: blue;
+    }
+    
+      
+    
+    
